@@ -1,5 +1,3 @@
-# urcw_job_ready_course
-
 # URCW Job Ready Course Setup Instructions
 
 # Ensure you have Python and Git installed on your system.
@@ -189,3 +187,15 @@ Ensure the following topics are included with detailed comments and examples:
 For questions or support, please open an issue or contact the course instructor.
 
 ---
+
+## Courses
+Courses : 
+
+Udacity - Version Control with Git
+Link: https://www.udacity.com/course/version-control-with-git--ud123
+Topics Covered: The course covers the fundamentals of version control, basic and advanced Git commands, branching and merging, and how to use Git for collaboration.
+Cost: Free.
+MIT OpenCourseWare - 6.0001 Introduction to Computer Science and Programming in Python
+Link: https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/
+Topics Covered: A university-level course covering core computer science concepts using Python. Topics include data types, control flow, functions, data structures, recursion , and an introduction to algorithms like searching and sorting.
+Cost: Free.
