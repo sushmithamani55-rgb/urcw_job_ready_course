@@ -103,9 +103,9 @@ Welcome to the **URCW Job Ready Course** repository! This course is designed to 
 
 ## How to Submit Your Work
 
-1. **Create Your Directory**  
+1. **Create Your Directory under python_outputs folder**  
    Format: `yourname_class_year_python`  
-   Example: `john_10A_2024_python`
+   Example: `john_csc_1_python`
 
 2. **Add Your Files**  
    Place your solutions, scripts, and outputs in your directory.

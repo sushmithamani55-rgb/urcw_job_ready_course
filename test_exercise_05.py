@@ -1,9 +1,5 @@
 import unittest
-
-
-
-import unittest
-from exercise_01 import (
+from excercise.exercise_01 import (
     last_digit, first_digit, reverse_number, max_of_numbers,
     list_example, tuple_example, set_example, dict_example,
     Stack, Queue, TreeNode
