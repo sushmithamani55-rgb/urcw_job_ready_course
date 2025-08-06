@@ -8,6 +8,9 @@
 ####################################################
 ## 1. Primitive Datatypes and Operators
 ####################################################
+# Execute this in python shell
+# python
+# >>> <Execute the code line by line here and capture the outputs>
 
 # You have numbers
 3  # => 3
