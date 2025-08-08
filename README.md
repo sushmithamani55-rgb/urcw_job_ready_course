@@ -53,9 +53,10 @@ Welcome to the **URCW Job Ready Course** repository! This course is designed to 
 
 - [Getting Started](#getting-started)
 - [Repository Structure](#repository-structure)
+- [Course Curriculum](#course-curriculum)
 - [How to Submit Your Work](#how-to-submit-your-work)
 - [Adding New Lessons](#adding-new-lessons)
-- [Python Concepts to Cover](#python-concepts-to-cover)
+- [Python Concepts Covered](#python-concepts-covered)
 - [Contributing Guidelines](#contributing-guidelines)
 - [Contact](#contact)
 
@@ -86,16 +87,165 @@ Welcome to the **URCW Job Ready Course** repository! This course is designed to 
 
 ## Repository Structure
 
-- `basics/`  
-  Contains fundamental Python lessons and exercises.
-- `advanced/`  
-  Advanced Python topics and projects.
-- `your_name_class_year_python/`  
-  Each student must create a directory in this format to submit their work.
-- `README.md`  
-  This file.
-- `requirements.txt`  
-  Python dependencies.
+```
+urcw_job_ready_course/
+├── basics/                    # Core Python lessons
+│   ├── 1/                    # Primitive data types and operators
+│   ├── 2/                    # Variables and collections
+│   ├── 3/                    # Control flow and iterables
+│   ├── 4/                    # Functions
+│   ├── 5/                    # Modules
+│   ├── 6/                    # Classes and OOP
+│   ├── 7/                    # Advanced topics
+│   ├── 8/                    # String manipulation and formatting
+│   ├── 9/                    # File handling and I/O
+│   └── 10/                   # Regular expressions
+├── django/                    # Django web framework lessons
+│   ├── 1_Introduction_to_Django.py
+│   └── 2_Django_Models_and_Database.py
+├── flask/                     # Flask web framework lessons
+│   └── 1_Introduction_to_Flask.py
+├── exercises/                 # Practice exercises
+│   ├── exercise_01.py        # Basic exercises
+│   ├── exercise_02.py
+│   ├── exercise_03.py
+│   ├── exercise_04.py
+│   ├── exercise_05.py
+│   ├── exercise_08_string_manipulation.py
+│   ├── exercise_09_file_handling.py
+│   ├── exercise_10_regex.py
+│   ├── exercise_django_01.py
+│   └── exercise_flask_01.py
+├── python_outputs/           # Student submissions
+├── main.py                   # Main application
+├── requirements.txt          # Python dependencies
+└── README.md                # This file
+```
+
+---
+
+## Course Curriculum
+
+### Core Python Programming (Lessons 1-10)
+
+**Lesson 1: Primitive Data Types and Operators**
+- Numbers, strings, booleans
+- Mathematical operators
+- Comparison operators
+- Logical operators
+
+**Lesson 2: Variables and Collections**
+- Lists, tuples, dictionaries, sets
+- Collection operations and methods
+- List comprehensions
+
+**Lesson 3: Control Flow and Iterables**
+- Conditional statements (if/elif/else)
+- Loops (for, while)
+- Exception handling
+- File I/O operations
+
+**Lesson 4: Functions**
+- Function definition and calling
+- Arguments and parameters
+- Lambda functions
+- Decorators and closures
+
+**Lesson 5: Modules**
+- Import statements
+- Creating modules
+- Package management
+
+**Lesson 6: Classes and Object-Oriented Programming**
+- Class definition and instantiation
+- Inheritance and polymorphism
+- Encapsulation
+- Special methods
+
+**Lesson 7: Advanced Topics**
+- Generators and iterators
+- Context managers
+- Decorators
+- Metaclasses
+
+**Lesson 8: String Manipulation and Formatting**
+- String methods and operations
+- String formatting (f-strings, .format())
+- Regular expressions basics
+- Text processing
+
+**Lesson 9: File Handling and I/O Operations**
+- File reading and writing
+- CSV and JSON processing
+- Binary file operations
+- Error handling in file operations
+
+**Lesson 10: Regular Expressions**
+- Pattern matching
+- String validation
+- Text extraction and replacement
+- Advanced regex features
+
+### Web Development with Django
+
+**Django Lesson 1: Introduction**
+- Django philosophy and features
+- Project setup and structure
+- Basic views and URL routing
+- Templates and Jinja2
+- Forms and validation
+- Admin interface
+
+**Django Lesson 2: Models and Database**
+- Django ORM
+- Model relationships
+- Database migrations
+- Query operations
+- Model methods and properties
+
+### Web Development with Flask
+
+**Flask Lesson 1: Introduction**
+- Flask philosophy and features
+- Application setup
+- Routes and views
+- Templates and Jinja2
+- Forms and request handling
+- API development
+
+---
+
+## Python Concepts Covered
+
+### Core Concepts
+- ✅ Variables and Data Types
+- ✅ Input/Output Operations
+- ✅ Operators and Expressions
+- ✅ Conditional Statements
+- ✅ Loops and Iteration
+- ✅ Functions and Scope
+- ✅ Lists, Tuples, Sets, Dictionaries
+- ✅ String Manipulation
+- ✅ Exception Handling
+- ✅ File I/O Operations
+- ✅ Modules and Packages
+- ✅ List Comprehensions
+- ✅ Lambda Functions
+- ✅ Classes and Objects
+- ✅ Inheritance and Polymorphism
+- ✅ Generators and Iterators
+- ✅ Decorators
+- ✅ Regular Expressions
+- ✅ Context Managers
+
+### Web Development
+- ✅ Django Framework
+- ✅ Flask Framework
+- ✅ Database Operations
+- ✅ API Development
+- ✅ User Authentication
+- ✅ Form Handling
+- ✅ Template Systems
 
 ---
 
@@ -111,7 +261,7 @@ Welcome to the **URCW Job Ready Course** repository! This course is designed to 
 3. **Commit and Push**
     ```sh
     git add yourname_class_year_python/
-    git commit -m "Add solutions for basics lesson 1"
+    git commit -m "Add solutions for lesson X"
     git push origin main
     ```
 
@@ -119,66 +269,55 @@ Welcome to the **URCW Job Ready Course** repository! This course is designed to 
 
 ## Adding New Lessons
 
-To help students learn missing Python concepts, add new lessons in the `basics/` folder. Each lesson should:
+To help students learn missing Python concepts, add new lessons in the appropriate folder. Each lesson should:
 
-- Be a separate `.py` file (e.g., `lists.py`, `functions.py`)
-- Contain detailed comments explaining each concept and code block
+- Be a separate `.py` file with detailed comments
 - Include example code and exercises
+- Follow the established naming convention
+- Include practical examples and use cases
 
-**Example: `basics/lists.py`**
+**Example Lesson Structure:**
 ```python
-# Lesson: Python Lists
-# Lists are ordered, mutable collections of items.
+####################################################
+## Lesson Title
+####################################################
 
-# Creating a list
-fruits = ['apple', 'banana', 'cherry']
-print(fruits)  # Output: ['apple', 'banana', 'cherry']
-
-# Accessing elements
-print(fruits[0])  # Output: apple
-
-# Adding elements
-fruits.append('orange')
-print(fruits)  # Output: ['apple', 'banana', 'cherry', 'orange']
-
-# Removing elements
-fruits.remove('banana')
-print(fruits)  # Output: ['apple', 'cherry', 'orange']
-
-# Iterate through a list
-for fruit in fruits:
-    print(fruit)
+# Introduction and overview
+# Detailed explanations with examples
+# Practical applications
+# Exercises for students
 ```
 
 ---
 
-## Python Concepts to Cover in `basics/`
+## Exercises and Practice
 
-Ensure the following topics are included with detailed comments and examples:
+Each lesson includes comprehensive exercises:
 
-- Variables and Data Types
-- Input/Output
-- Operators
-- Conditional Statements (`if`, `elif`, `else`)
-- Loops (`for`, `while`)
-- Functions (with and without arguments, return values)
-- Lists, Tuples, Sets, Dictionaries
-- String Manipulation
-- Exception Handling
-- File I/O
-- Modules and Packages
-- List Comprehensions
-- Lambda Functions
-- Basic OOP (Classes and Objects)
+- **Basic Exercises**: Fundamental concept practice
+- **Intermediate Exercises**: Real-world applications
+- **Advanced Exercises**: Complex problem-solving
+- **Project-Based Exercises**: Complete application development
+
+### Exercise Categories:
+- String manipulation and text processing
+- File handling and data processing
+- Regular expressions and pattern matching
+- Web development with Django and Flask
+- API development and testing
+- Database operations and ORM usage
 
 ---
 
 ## Contributing Guidelines
 
-- Always pull the latest changes before pushing.
-- Write clear, commented code.
-- Submit your work in your individual directory.
-- For new lessons, follow the commenting style shown above.
+- Always pull the latest changes before pushing
+- Write clear, commented code
+- Submit your work in your individual directory
+- For new lessons, follow the commenting style shown above
+- Test your code before submitting
+- Include proper error handling
+- Follow PEP 8 coding standards
 
 ---
 
@@ -188,14 +327,58 @@ For questions or support, please open an issue or contact the course instructor.
 
 ---
 
-## Courses
-Courses : 
+## Additional Resources
 
-Udacity - Version Control with Git
-Link: https://www.udacity.com/course/version-control-with-git--ud123
-Topics Covered: The course covers the fundamentals of version control, basic and advanced Git commands, branching and merging, and how to use Git for collaboration.
-Cost: Free.
-MIT OpenCourseWare - 6.0001 Introduction to Computer Science and Programming in Python
-Link: https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/
-Topics Covered: A university-level course covering core computer science concepts using Python. Topics include data types, control flow, functions, data structures, recursion , and an introduction to algorithms like searching and sorting.
-Cost: Free.
+### Online Courses
+- **Udacity - Version Control with Git**
+  - Link: https://www.udacity.com/course/version-control-with-git--ud123
+  - Topics: Version control fundamentals, Git commands, branching and merging
+  - Cost: Free
+
+- **MIT OpenCourseWare - 6.0001 Introduction to Computer Science and Programming in Python**
+  - Link: https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/
+  - Topics: Core computer science concepts using Python
+  - Cost: Free
+
+### Recommended Learning Path
+1. Complete all core Python lessons (1-10)
+2. Practice with exercises for each lesson
+3. Build small projects using learned concepts
+4. Learn Django for full-stack web development
+5. Learn Flask for lightweight web applications
+6. Practice with real-world projects
+7. Contribute to open-source projects
+
+---
+
+## Best Practices
+
+1. **Code Organization**
+   - Use meaningful variable and function names
+   - Write clear comments and documentation
+   - Follow PEP 8 style guidelines
+   - Use proper indentation and spacing
+
+2. **Error Handling**
+   - Always handle potential exceptions
+   - Provide meaningful error messages
+   - Use try-except blocks appropriately
+   - Validate user input
+
+3. **Testing**
+   - Write tests for your functions
+   - Test edge cases and error conditions
+   - Use unit testing frameworks
+   - Practice test-driven development
+
+4. **Version Control**
+   - Commit frequently with meaningful messages
+   - Use descriptive branch names
+   - Review code before merging
+   - Keep commits atomic and focused
+
+5. **Documentation**
+   - Write clear docstrings for functions
+   - Document complex algorithms
+   - Include usage examples
+   - Keep README files updated
